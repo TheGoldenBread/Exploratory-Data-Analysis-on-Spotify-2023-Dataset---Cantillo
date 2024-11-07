@@ -1,3 +1,4 @@
+<a name="top"></a>
 <p align="center">
 <img src="https://github.com/user-attachments/assets/9be4c329-e2f3-40e9-86df-bce547ba8d78" width="200" class="center"> <br>
 </p>
@@ -33,3 +34,5 @@ Through this, I was also able to find its data types and those that had missing 
 - In Shazam Charts, with only 903 entries
 - Key, with only 858 entries
  
+<br><hr>
+[:top: Back to top](#top)
