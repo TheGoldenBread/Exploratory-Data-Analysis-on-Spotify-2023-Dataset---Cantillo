@@ -1,3 +1,4 @@
-# An Exploratory Data Analysis on the Spotify 2023 Dataset
+# :musical_note: An Exploratory Data Analysis on the Spotify 2023 Dataset :musical_note:
 ## By Liam Cantillo
-The goal of this data analysis is to give a summary overview of the Spotify 2023 dataset.
+### Overview 
+This project aims to perform an exploratory data analysis (EDA) on Spotify's most streamed songs of 2023.
