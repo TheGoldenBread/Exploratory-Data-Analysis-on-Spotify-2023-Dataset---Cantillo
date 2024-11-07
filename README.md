@@ -25,7 +25,7 @@ This dataset contains various features of popular Spotify songs; however, only n
 - Liveness %: Presence of live performance elements
 - Speechiness %: Amount of spoken words in the song
 <br><br>
-<p> Overall, the dataset contains 953 entries/rows and 24 columns I was able to find this through. </p>
+<p> Overall, the dataset contains 953 entries/rows and 24 columns. I was able to find this using. </p>
 
 ``` python
 df.info()
@@ -40,16 +40,38 @@ Through this, I was also able to find its data types and those that had missing 
 columns_to_convert = ['streams']
 df[columns_to_convert] = df[columns_to_convert].apply(pd.to_numeric, errors='coerce')
 ```
-<p> Thanks to this code <i>Streams</i> is now in float64 by converting its invalid entries as NaN and is now able to be intepreted. </p>
+<p> Thanks to this code, <i>Streams</i> is now in float64 by converting its invalid entries as NaN and is now able to be interpreted. </p>
+
+<p>I was given a set of questions that I had to answer, so here are them now.</p>
 
 ### Basic Descriptive Statistics :chart_with_upwards_trend:
-<p>I was given a set of questions that I had to answer so here are them now.</p>
 
 - What are the mean, median, and standard deviation of the streams column?
   - The values that I got were: <br>
 Mean: 514137424.93907565 <br>
 Median: 290530915.0 <br>
 Standard Deviation: 566856949.0388832
- 
+- What is the distribution of released_year and artist_count? Are there any noticeable trends or outliers?
+<p>For this I plotted out the released_year and artist_count.</p>
+<img src="https://github.com/user-attachments/assets/fb1eaccb-0d9b-4874-b351-695d4caf3eb6" class="center"> <br>
+<img src="https://github.com/user-attachments/assets/1c038a5f-8fb4-49e0-8645-f9465fb58cc6" class="center"> <br>
+<p> As we can see from the graph, the most popular songs are from 2010 onwards. However, there are outliers in which songs date back to the 1900s to the 2000s. For the amount of artists, there are at most 8 artists on a song, which is insane to think about since you'd normally think that 1-2 people would work on a song, 3 is still acceptable, but any amount beyond that is unreal especially 8. </p>
+
+### Top Performers
+- Which track has the highest number of streams? Display the top 5 most streamed tracks.
+<p> Using this code, I was able to find the songs with the highest number of streams</p>
+
+``` python
+highest_streams = df.sort_values(by='streams', ascending=False).head(5)
+highest_streams[['track_name', 'streams']]
+```
+<p>Which were:</p>
+
+1. Blinding Lights with 3.7 billion streams
+2. Shape of You with 3.5 billion streams
+3. Someone You Loved with 2.8 billion streams
+4. Dance Monkey with 2.8 billion streams
+5. Sunflower - Spider-Man: Into the Spider-Verse with 2.8 billion streams
+
 <br><hr>
 [:top: Back to top](#top)
