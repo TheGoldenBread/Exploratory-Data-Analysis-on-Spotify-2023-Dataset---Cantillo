@@ -2,7 +2,7 @@
 <img src="https://github.com/user-attachments/assets/9be4c329-e2f3-40e9-86df-bce547ba8d78" width="200" class="center"> <br>
 </p>
 
-<h1 align="center"> :musical_note: An-Exploratory-Data-Analysis-on-the-Spotify-2023-Dataset :musical_note: </h1><br>
+<h1 align="center"> :musical_note: An Exploratory Data Analysis on the Spotify 2023 Dataset :musical_note: </h1><br>
 
 ### Overview :mag_right:
 This project aims to perform an exploratory data analysis (EDA) on Spotify's most streamed songs of 2023.
@@ -33,5 +33,3 @@ Through this, I was also able to find its data types and those that had missing 
 - In Shazam Charts, with only 903 entries
 - Key, with only 858 entries
  
-<br><hr>
-[:arrow_up: Back to top](#An-Exploratory-Data-Analysis-on-the-Spotify-2023-Dataset)
