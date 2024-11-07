@@ -10,10 +10,11 @@ This project aims to perform an exploratory data analysis (EDA) on Spotify's mos
 ### Dataset Information :bar_chart:
 The data was taken from https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023 <br>
 This dataset contains various features of popular Spotify songs; however, only necessary ones will be focused on, such as its <br>
+- Track Name: Name of the song
+- Artist(s) Name: Name of the artist
+- Artist(s) Count: Amount of artists who worked on the song
 - Streams: Total number of streams on Spotify
 - Released Year: The year it was released
-- Released Month: The month it was released
-- Released Day: The day of the month when it was released
 - BPM: Beats per minute
 - Key: Key of the song
 - Mode: Mode of the song (major or minor)
@@ -71,7 +72,24 @@ highest_streams[['track_name', 'streams']]
 2. Shape of You with 3.5 billion streams
 3. Someone You Loved with 2.8 billion streams
 4. Dance Monkey with 2.8 billion streams
-5. Sunflower - Spider-Man: Into the Spider-Verse with 2.8 billion streams
+5. Sunflower - Spider-Man: Into the Spider-Verse with 2.8 billion streams <br>
+
+- Who are the top 5 most frequent artists based on the number of tracks in the dataset?
+
+``` python
+top_artists = df['artist(s)_name'].value_counts().head(5)
+top_artists
+```
+<p> With this, I was able to find the most frequent artists who appeared.</p>
+
+1. Taylor Swift appeared with a staggering amount of 34 times
+2. The Weeknd appeared 22 times
+3. Bad Bunny appeared 19 times
+4. SZA appeared 19 times
+5. Harry Styles appeared 17 times
+
+## Temporal Trends
+- Analyze the trends in the number of tracks released over time. Plot the number of tracks released per year.
 
 <br><hr>
 [:top: Back to top](#top)
