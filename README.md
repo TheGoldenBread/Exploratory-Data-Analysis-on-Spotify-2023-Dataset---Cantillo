@@ -34,6 +34,7 @@ This dataset contains various features of popular Spotify songs; however, only n
 - Released Month: The month it was released
 - In Spotify Playlists: Number of Spotify playlists the song is included in
 - In Spotify Charts: Presence and rank of the song on Spotify charts
+- In Apple Playlists: Number of Apple Music playlists the song is included in
 - BPM: Beats per minute
 - Key: Key of the song
 - Mode: Mode of the song (major or minor)
