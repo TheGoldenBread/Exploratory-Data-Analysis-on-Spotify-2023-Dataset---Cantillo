@@ -10,7 +10,7 @@
 - [Overview](#overview)
 - [Dataset Information](#dataset)
 - [Basic Descriptive Statistics](#basic)
-- [Top Performers](#top)
+- [Top Performers](#topp)
 - [Temporal Trends](#temporal)
 - [Genre and Music Characteristics](#genre)
 - [Platform Popularity](#platform)
@@ -77,7 +77,7 @@ Standard Deviation: 566856949.0388832
 <img src="https://github.com/user-attachments/assets/1c038a5f-8fb4-49e0-8645-f9465fb58cc6" class="center"> <br>
 <p align="justify"> As we can see from the graph, the most popular songs are from 2010 onwards. However, there are outliers in which songs date back to the 1900s to the 2000s. For the amount of artists, there are at most 8 artists on a song, which is insane to think about since you'd normally think that 1-2 people would work on a song, 3 is still acceptable, but any amount beyond that is unreal especially 8. </p>
 
-<a name="top"/>
+<a name="topp"/>
 
 ### Top Performers :studio_microphone:
 - Which track has the highest number of streams? Display the top 5 most streamed tracks.
